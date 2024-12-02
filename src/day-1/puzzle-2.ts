@@ -1,5 +1,6 @@
-const file = await Bun.file('./input.txt').text()
-const strings = file.split('\n')
+import { readInputStrings } from '@input'
+
+const strings = await readInputStrings()
 
 const left = new Map<number, number>()
 const right = new Map<number, number>()

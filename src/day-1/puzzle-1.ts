@@ -1,11 +1,12 @@
-const file = await Bun.file('./input.txt').text()
-const strings = file.split('\n')
+import { readInputStrings } from '@input'
+
+const strings = await readInputStrings()
 
 const left: number[] = []
 const right: number[] = []
 
-for (const stringPair of strings) {
-	const [a, b] = stringPair.split('   ').map(Number)
+for (const string of strings) {
+	const [a, b] = string.split('   ').map(Number)
 	left.push(a)
 	right.push(b)
 }
