@@ -3,10 +3,24 @@
 	"organizeImports": {
 		"enabled": true
 	},
+	"formatter": {
+		"enabled": true,
+		"formatWithErrors": false,
+		"lineWidth": 120
+	},
 	"linter": {
 		"enabled": true,
 		"rules": {
 			"recommended": true
+		}
+	},
+	"javascript": {
+		"formatter": {
+			"arrowParentheses": "asNeeded",
+			"indentWidth": 4,
+			"quoteStyle": "single",
+			"semicolons": "asNeeded",
+			"trailingComma": "all"
 		}
 	}
 }
