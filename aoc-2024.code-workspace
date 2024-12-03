@@ -1,0 +1,29 @@
+{
+	"folders": [
+		{
+			"name": "root",
+			"path": "."
+		},
+		{
+			"name": "src",
+			"path": "./src"
+		}
+	],
+	"settings": {
+		"editor.defaultFormatter": "biomejs.biome"
+	},
+	"tasks": {
+		"version": "2.0.0",
+		"tasks": [
+			{
+				"label": "Solve puzzle",
+				"type": "shell",
+				"command": "[[ ${fileBasename} == puzzle-*.ts ]] && bun run ${fileBasename}",
+				"options": {
+					"cwd": "${fileDirname}"
+				},
+				"problemMatcher": []
+			}
+		]
+	}
+}
