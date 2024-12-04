@@ -18,7 +18,7 @@
 			{
 				"label": "Solve puzzle",
 				"type": "shell",
-				"command": "[[ ${fileBasename} == puzzle-*.ts ]] && bun run ${fileBasename}",
+				"command": "[[ ${fileBasename} == puzzle-*.ts ]] && bun ${fileBasename}",
 				"options": {
 					"cwd": "${fileDirname}"
 				},
