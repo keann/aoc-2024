@@ -15,3 +15,11 @@ export const readInputStrings = async () => {
 
 	return strings
 }
+
+export const readInputSectionStrings = async () => {
+	const file = await readInputFile()
+	const sections = file.split('\n\n')
+	const sectionStrings = sections.map(section => section.split('\n'))
+
+	return sectionStrings
+}
