@@ -1,7 +1,7 @@
 import { readInputFile } from '@input'
 
 const file = await readInputFile()
-const allStones = file.trim().split(' ')
+const allStones = file.split(' ')
 
 const blinkOnStone = (stone: string): string[] => {
 	if (stone === '0') {
